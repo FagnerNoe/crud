@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Consulta de Clientes</title>
+
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/cadastro.css">
+    <link rel="stylesheet" href="./assets/css/consulta.css">
+    <link rel="stylesheet" href="./assets/css/detalhes.css">
+    <link rel="stylesheet" href="./assets/css/opcoes.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="./assets/js/script.js" defer></script>
+    
+    
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro e Consultas</h1>
+    </header>
+    <article>
+        <section id="cadastro">
+            <h2>Cadastrar</h2>
+        </section>
+        <section id="consulta">
+            <h2>Consultar</h2>
+        </section>
+    </article>
+
+    <div class="modal-container">
+
+        <div class="modal">
+            <div class="cadastro">
+                <form>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" maxlength="50"   
+                    title="Deve conter apenas letras" required />
+                    <label for="nascimento">Ano De Nascimento</label>
+                    <input type="date" id="nascimento"/>
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" required>
+                    <label for="telefone">Contato</label>
+                    <input type="tel" required
+                    title="Deve conter apenas numeros"
+                    maxlength="14" minlength='14' id="telefone" placeholder="(18)99999-9999" onkeypress="mascara()"/>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="example@email.com " required/>
+
+                    <button id="btnSalvar">Salvar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+        <div id="tabelaConsulta" class="tabela">
+            <div class="modalConsulta">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Contato</th>
+                            <th>Detalhes</th>
+                        </tr>
+                    </thead>
+                    <tbody>                        
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+
+        <div class="detalhes">
+            <div class="detalhesCliente">
+                <label>Nome:</label>
+                <span id="detNome"></span>
+                <label>Ano de Nascimento:</label>
+                <span id="detAno"></span>
+                <label>Endereço:</label>
+                <span id="detEndereco"></span>
+                <label>Contato:</label>
+                <span id="detTelefone"></span>
+                <label>Email:</label>
+                <span id="detEmail"></span>
+
+                <div class="acao">
+
+                    <button id="editar" title="editar"><i class="bx bxs-edit"></i></button>
+                    <button id="excluir" title="excluir"><i class="bx bxs-trash"></i></button>
+
+                </div>
+
+            </div>
+        </div>
+            
+            <div class="opcaoDeletar">             
+            
+            </div>
+            
+    
+
+</body>
+
+</html>

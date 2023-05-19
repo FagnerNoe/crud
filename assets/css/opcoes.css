@@ -1,0 +1,68 @@
+.opcaoDeletar{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(39, 37, 37, 0.447);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    z-index: 999;  
+}
+
+.active{
+    display:flex;
+}
+
+.box{
+    width:50%;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px ;
+    text-align: center;
+    padding: 10px;      
+    
+}
+
+.opcoes{
+    width: 96%;
+    height:60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px auto;
+}
+
+.opcoes button{
+    width: 48%;
+    height:auto;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 6px black;
+    background-color: rgb(12, 185, 12);
+    cursor: pointer;
+    padding: 22px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size:1rem;
+}
+.opcoes button:last-of-type{
+    background-color: rgb(36, 128, 248);
+}
+.opcoes button i{
+    font-size: 24px;
+    border: 2px solid ;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+
+@media (max-width: 852px) {
+    .box{
+        width:80%;
+    }
+}

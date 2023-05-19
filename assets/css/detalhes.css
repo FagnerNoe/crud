@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Dancing+Script:wght@400;500&family=Poppins:ital,wght@0,100;0,400;0,700;1,100&display=swap');
+
+
+.detalhes{
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.951);
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;        
+}
+
+.detalhesCliente{
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+    margin: 60px auto;
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+}
+
+.active{
+    display: flex;
+}
+
+.active .modalConsulta , .active .modalDetalhes{
+    animation: modal .4s;
+  }
+ 
+  @keyframes modalConsulta{
+    from{
+       opacity: 0;
+       transform: translate3d(0, -60px, 0);
+    }
+    to{
+       opacity: 1;
+       transform: translate3d(0, 0, 0);
+    }
+  }
+
+
+.detalhesCliente label{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom:3px ;
+    color:rgb(64, 190, 224); 
+    
+}
+
+.detalhesCliente span{
+    margin-bottom: 20px;
+    width: 100%;
+    border-bottom: 1px solid rgb(64, 190, 224);
+       
+}
+
+.acao{
+    width: 80%;
+    height: 50px;
+    margin:10px auto;
+    display: flex;
+    justify-content:space-between;
+}
+
+.acao button{
+    width:45%;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(64, 190, 224);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px black;
+}
+
+.acao button:hover{
+    background-color: rgb(224, 236, 248);
+    box-shadow: 2px 2px 4px black inset;
+    color: black;
+}
+
+.acao button:last-child{
+    background-color: red;
+}
+
+.acao button:last-child:hover{
+    background-color: rgb(248, 164, 164);
+}
+
+.acao button i{
+    font-size: 25px;
+}
+
+@media (max-width: 730px) {
+    .detalhesCliente{       
+        width:90%;
+        margin-bottom: 20vh;
+    }  
+
+}
+
+

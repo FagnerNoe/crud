@@ -1,0 +1,101 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Dancing+Script:wght@400;500&family=Poppins:ital,wght@0,100;0,400;0,700;1,100&display=swap');
+
+
+ .modal-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.941);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;    
+ }
+
+ .modal{
+    width: 50%;
+    height:auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(44, 223, 184);
+ } 
+ .modal .cadastro{
+    width: 96%;
+    height: 96%;
+    margin: 15px auto;
+ }
+ .active{
+   display: flex;
+ }
+
+ .active .modal{
+   animation: modal .4s;
+ }
+
+ @keyframes modal{
+   from{
+      opacity: 0;
+      transform: translate3d(0, -60px, 0);
+   }
+   to{
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+   }
+ }
+
+  form{
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;    
+ }
+
+ form label{
+   font-size: 1.1rem;
+   font-weight: 700;
+   color:rgb(69, 174, 243);
+ }
+
+ input{ 
+    height: 40px !important;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(69, 174, 243);
+    outline:unset;
+    padding: 5px;
+ }
+ 
+
+ form button{
+    width: 50%;
+    margin:auto;
+    background-color: rgb(117, 25, 187);
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 1px 5px 8px black;
+    backdrop-filter: blur(3px);
+    color: aliceblue;
+    font-size: 20px;
+    cursor: pointer;
+ }
+
+ button:hover{
+    background-color: rgb(211, 244, 245);
+    box-shadow: 2px 2px 5px black inset;
+    color: black;
+ }
+
+ @media(max-width:680px) {
+   .modal{
+      width: 90%;
+      margin-bottom:5vh;      
+   }
+   input{
+      width:100%;
+   }
+ }
