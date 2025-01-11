@@ -16,22 +16,31 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <script src="./assets/js/script.js" defer></script>
-    
-    
+
+
 </head>
 
 <body>
     <header>
-        <h1>Cadastro e Consultas</h1>
+        <h3>Cadastro e Consultas</h3>
     </header>
     <article>
+        <div class="box-logo">
+            <h2>FN Sistemas</h2>
+        </div>
+    </article>
+    <div class="container-botoes">
         <section id="cadastro">
             <h2>Cadastrar</h2>
+            <img src="/assets/img/adicionar.png" />
         </section>
         <section id="consulta">
             <h2>Consultar</h2>
+            <img src="/assets/img/lupa2.png" />
         </section>
-    </article>
+
+
+    </div>
 
     <div class="modal-container">
 
@@ -39,72 +48,70 @@
             <div class="cadastro">
                 <form>
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" maxlength="50"   
-                    title="Deve conter apenas letras" required />
+                    <input type="text" id="nome" maxlength="50" title="Deve conter apenas letras" required />
                     <label for="nascimento">Ano De Nascimento</label>
-                    <input type="date" id="nascimento"/>
+                    <input type="date" id="nascimento" />
                     <label for="endereco">Endereço</label>
                     <input type="text" id="endereco" required>
                     <label for="telefone">Contato</label>
-                    <input type="tel" required
-                    title="Deve conter apenas numeros"
-                    maxlength="14" minlength='14' id="telefone" placeholder="(18)99999-9999" onkeypress="mascara()"/>
+                    <input type="tel" required title="Deve conter apenas numeros" maxlength="14" minlength='14'
+                        id="telefone" placeholder="(18)99999-9999" onkeypress="mascara()" />
                     <label for="email">Email</label>
-                    <input type="text" id="email" placeholder="example@email.com " required/>
+                    <input type="text" id="email" placeholder="example@email.com " required />
 
                     <button id="btnSalvar">Salvar</button>
                 </form>
             </div>
         </div>
     </div>
-    
 
-        <div id="tabelaConsulta" class="tabela">
-            <div class="modalConsulta">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Nome</th>
-                            <th>Contato</th>
-                            <th>Detalhes</th>
-                        </tr>
-                    </thead>
-                    <tbody>                        
-                        
-                    </tbody>
-                </table>
-            </div>
+
+    <div id="tabelaConsulta" class="tabela">
+        <div class="modalConsulta">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Contato</th>
+                        <th>Detalhes</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
         </div>
-    
+    </div>
 
-        <div class="detalhes">
-            <div class="detalhesCliente">
-                <label>Nome:</label>
-                <span id="detNome"></span>
-                <label>Ano de Nascimento:</label>
-                <span id="detAno"></span>
-                <label>Endereço:</label>
-                <span id="detEndereco"></span>
-                <label>Contato:</label>
-                <span id="detTelefone"></span>
-                <label>Email:</label>
-                <span id="detEmail"></span>
 
-                <div class="acao">
+    <div class="detalhes">
+        <div class="detalhesCliente">
+            <label>Nome:</label>
+            <span id="detNome"></span>
+            <label>Ano de Nascimento:</label>
+            <span id="detAno"></span>
+            <label>Endereço:</label>
+            <span id="detEndereco"></span>
+            <label>Contato:</label>
+            <span id="detTelefone"></span>
+            <label>Email:</label>
+            <span id="detEmail"></span>
 
-                    <button id="editar" title="editar"><i class="bx bxs-edit"></i></button>
-                    <button id="excluir" title="excluir"><i class="bx bxs-trash"></i></button>
+            <div class="acao">
 
-                </div>
+                <button id="editar" title="editar"><i class="bx bxs-edit"></i></button>
+                <button id="excluir" title="excluir"><i class="bx bxs-trash"></i></button>
 
             </div>
+
         </div>
-            
-            <div class="opcaoDeletar">             
-            
-            </div>
-            
-    
+    </div>
+
+    <div class="opcaoDeletar">
+
+    </div>
+
+
 
 </body>
 

@@ -9,34 +9,35 @@
 
 body {
     width: 100vw;
-    height: 100vh;
-    background:linear-gradient(-30deg,rgb(126, 222, 247),rgb(168, 85, 245));
-    display: flex;
+    height: 100%;
+    background:linear-gradient(-30deg,rgb(216, 243, 249),rgb(214, 249, 226));
+    display: flex;   
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 header {
-    width: 80vw;
-    background-color: rgb(78, 178, 245);
+    width: 70%;
+    background:linear-gradient(45deg,rgb(36, 246, 159),rgb(166, 246, 17));
     border-radius: 5px;
     color: white;
-    border: 1px solid white;
-    margin-top: 5px;
+    border: 1px solid white;   
     text-align: center;
-    padding: 10px;
+    padding: 15px;
+    margin-top: 10px;
 }
 
 article {
-    width: 80vw;
-    height: 80vh;
+    width: 70vw;
+    height: 60vh;
     margin-top: 10px;
     background-color: rgb(179, 163, 248);
     box-shadow: 0 5px 10px black;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    align-items: end;
+    justify-content: flex-end;   
     border-radius: 8px;
     background-image: url('../img/escritorio.jpg');
     background-repeat: no-repeat;
@@ -45,58 +46,93 @@ article {
 
 }
 
-section {
-    width: 40%;
-    height: 50%;
+img{
+   width: 45px;
+    filter: invert();
+   margin-top: 5px;
+   
+}
+
+.box-logo{
+    color: white;
+    margin-right: 10px;
+    text-shadow: 0px 8px 10px rgb(24, 25, 24);    
+}
+
+.container-botoes{
+    width: 50%;
+    margin-top: 20px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    
+}
+
+section {    
     border: 1px solid rgb(55, 155, 212);
     border-radius: 15px;
+    background: linear-gradient(30deg,rgb(0, 255, 213),rgb(32, 113, 227));
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     box-shadow: 0 3px 8px;
-    background-color: rgba(100, 173, 233, 0.041);
-    backdrop-filter: blur(5px);
+    padding: 20px 100px;
     cursor: pointer;
 }
 
+
+
+
 section h2 {
-    font-size: 42px;
+    font-size: 14px;
     color: aliceblue;
     letter-spacing: 3px;
 }
 
 section:first-child {
     border: 1px solid rgb(25, 241, 108);
+    background: linear-gradient(45deg,rgb(50, 250, 14),rgb(18, 211, 198));
 
 }
 
 @media (max-width: 780px) {
 
     body {
-        display: flex;
-        justify-content: flex-start;
+       height: 110vh;
+        display: flex;  
+        justify-content: start; 
         overflow: hidden;
-
     }
 
     header {
-        width: 100vw;
+        width: 90vw;
+        height: 50px;
         padding: 3px;
+        margin-top: 10px;
+        text-align: center;
+        line-height: 50px;        
     }
 
     article {
-        width: 100vw;
-        height: 90%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
+        width: 90vw;
+        height: 50%;  
+          }
 
-    }
+    .container-botoes{     
+    width: 96%;
+    height: 180px;
+    overflow: hidden;
+    display: flex;
+    gap: 5px;
+
+    }      
 
     section {
-        width: 80%;
-        height: 30%;
-        margin: 50px;
+      padding: 30px 30px;     
+      margin-top: 10px;
     }
 
 }
