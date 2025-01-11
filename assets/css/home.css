@@ -46,11 +46,9 @@ article {
 
 }
 
-img{
-   width: 45px;
+i{
     filter: invert();
-   margin-top: 5px;
-   
+    
 }
 
 .box-logo{
